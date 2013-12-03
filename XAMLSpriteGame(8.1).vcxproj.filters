@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="DirectXPage.xaml.cpp" />
+    <ClCompile Include="SpriteGame.cpp" />
+    <ClCompile Include="GameEngine\Level.cpp" />
+    <ClCompile Include=".\DXCore\DirectXBase.cpp" />
+    <ClCompile Include="Audio\AudioEngine.cpp">
+      <Filter>kMiscHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioManager.cpp">
+      <Filter>kMiscHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include=".\DXCore\DDSTextureLoader.cpp">
+      <Filter>kMiscHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\Direct2Dlighteffect.cpp">
+      <Filter>kMiscHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Helpers\Geometry.cpp">
+      <Filter>kMiscHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="IrrXML\irrXML.cpp">
+      <Filter>kMiscHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Helpers\LocalDiagnostics.cpp">
+      <Filter>kMiscHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\MediaStreamer.cpp">
+      <Filter>kMiscHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>kMiscHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Helpers\RWContract.cpp">
+      <Filter>kMiscHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Helpers\Timer.cpp">
+      <Filter>kMiscHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include=".\DXCore\BasicLoader.cpp">
+      <Filter>kBasic</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameObjects\Character.cpp">
+      <Filter>kGameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\CollidingObject.cpp">
+      <Filter>kGameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameObjects\Characters\DirectionalPlayer.cpp">
+      <Filter>kGameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\Sprite.cpp">
+      <Filter>kGameCore</Filter>
+    </ClCompile>
+    <ClCompile Include=".\DXCore\SpriteWorks.cpp">
+      <Filter>kGameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameObjects\Characters\Enemy.cpp">
+      <Filter>kGameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\ParticleEffects\Explosion.cpp">
+      <Filter>kGameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\ParticleEffects\FireBall.cpp">
+      <Filter>kGameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\Backgrounds\FlashingBackground.cpp">
+      <Filter>kGameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameObjects\GamePlayElement.cpp">
+      <Filter>kGameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameObjects\Characters\HorizontalSliderPlayer.cpp">
+      <Filter>kGameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\ParticleEffects\RocketFire.cpp">
+      <Filter>kGameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\Backgrounds\SlidingBackgroundSprite.cpp">
+      <Filter>kGameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameObject.cpp">
+      <Filter>kGameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameObjects\Characters\Runner.cpp">
+      <Filter>kGameObjects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="DirectXPage.xaml.h" />
+    <ClInclude Include="SpriteGame.h" />
+    <ClInclude Include="GameEngine\Level.h" />
+    <ClInclude Include=".\DXCore\DirectXBase.h" />
+    <ClInclude Include="Audio\AudioEngine.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioManager.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="IrrXML\CXMLReaderImpl.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include=".\DXCore\DDSTextureLoader.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\Direct2DlightEffect.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="IrrXML\fast_atof.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\Geometry.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="IrrXML\heapsort.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="IrrXML\irrArray.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="IrrXML\irrString.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="IrrXML\irrTypes.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="IrrXML\irrXML.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\LocalDiagnostics.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\MediaStreamer.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\RWContract.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\SizeEnums.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="DXCore\SizeEnums.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\SizeEnums.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\Timer.h">
+      <Filter>kMiscHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\ParticleEffects\BaseParticleSystem.h">
+      <Filter>kBasic</Filter>
+    </ClInclude>
+    <ClInclude Include=".\DXCore\BasicLoader.h">
+      <Filter>kBasic</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\BasicMath.h">
+      <Filter>kBasic</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\BasicShapes.h">
+      <Filter>kBasic</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\BasicShapes.h">
+      <Filter>kBasic</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\Background.h">
+      <Filter>kGameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameObjects\Character.h">
+      <Filter>kGameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\CollidingObject.h">
+      <Filter>kGameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameObjects\Characters\ControllableCharacter.h">
+      <Filter>kGameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameObjects\Characters\DirectionalPlayer.h">
+      <Filter>kGameCore</Filter>
+    </ClInclude>
+    <ClInclude Include=".\DXCore\DirectXLinker.h">
+      <Filter>kGameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\Sprite.h">
+      <Filter>kGameCore</Filter>
+    </ClInclude>
+    <ClInclude Include=".\DXCore\SpriteWorks.h">
+      <Filter>kGameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameObjects\Characters\Enemy.h">
+      <Filter>kGameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\ParticleEffects\Explosion.h">
+      <Filter>kGameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\ParticleEffects\FireBall.h">
+      <Filter>kGameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\Backgrounds\FlashingBackground.h">
+      <Filter>kGameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameObjects\GamePlayElement.h">
+      <Filter>kGameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameObjects\Characters\HorizontalSliderPlayer.h">
+      <Filter>kGameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\ParticleEffects\RocketFire.h">
+      <Filter>kGameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\Backgrounds\SlidingBackgroundSprite.h">
+      <Filter>kGameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\GameConstants.h">
+      <Filter>kGameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameObject.h">
+      <Filter>kGameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameObjects\Characters\Runner.h">
+      <Filter>kGameObjects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="PackageManifest(8.1)\Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="StandardStyles.xaml">
+      <Filter>kXAML</Filter>
+    </Page>
+    <Page Include="DirectXPage.xaml">
+      <Filter>kXAML</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Icons\30x30Tile.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\Icons\50x50Tile.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\Icons\150x150Tile.scale-80.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\Icons\150x150Tile.scale-100.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\Icons\150x150Tile.scale-140.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\Icons\150x150Tile.scale-180.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\Icons\310x150Tile.scale-100.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\andromeda.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\bad_health.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\UI\buttonHud.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\UI\clockHud.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\dark_background.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\debug.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\Enemy1.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\Enemy2.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\Enemy3.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\Enemy4.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\Enemy5.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\finishline.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\galaxy.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\GeometrySprite.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\GeometrySprite2.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\UI\heartHud.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\HeightMap.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\life_upgrade.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\m32.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\particle.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\UI\pauseButton.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\planets.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\planets2.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\ring.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\UI\shootButton.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\SpaceShip.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\Icons\SplashScreen.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\spotlight.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\weapons_upgrade.png">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\GameObjects\ida.dds">
+      <Filter>kAssets</Filter>
+    </Image>
+    <Image Include="Assets\MyAssets\ground.png">
+      <Filter>mAssets</Filter>
+    </Image>
+    <Image Include="Assets\MyAssets\volt1.png">
+      <Filter>mAssets</Filter>
+    </Image>
+    <Image Include="Assets\MyAssets\volt2.png">
+      <Filter>mAssets</Filter>
+    </Image>
+    <Image Include="Assets\MyAssets\volt3.png">
+      <Filter>mAssets</Filter>
+    </Image>
+    <Image Include="Assets\MyAssets\volt4.png">
+      <Filter>mAssets</Filter>
+    </Image>
+    <Image Include="Assets\MyAssets\volt5.png">
+      <Filter>mAssets</Filter>
+    </Image>
+    <Image Include="Assets\MyAssets\volt6.png">
+      <Filter>mAssets</Filter>
+    </Image>
+    <Image Include="Assets\MyAssets\volt7.png">
+      <Filter>mAssets</Filter>
+    </Image>
+    <Image Include="Assets\MyAssets\volt8.png">
+      <Filter>mAssets</Filter>
+    </Image>
+    <Image Include="Assets\MyAssets\volt9.png">
+      <Filter>mAssets</Filter>
+    </Image>
+    <Image Include="Assets\MyAssets\volt10.png">
+      <Filter>mAssets</Filter>
+    </Image>
+    <Image Include="Assets\MyAssets\bg-hills.png">
+      <Filter>mAssets</Filter>
+    </Image>
+    <Image Include="Assets\MyAssets\sunset.png">
+      <Filter>mAssets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\Sounds\Coin1.wav">
+      <Filter>kAssets</Filter>
+    </Media>
+    <Media Include="Assets\Sounds\Crash.wav">
+      <Filter>kAssets</Filter>
+    </Media>
+    <Media Include="Assets\Music\DST-10Class.wav">
+      <Filter>kAssets</Filter>
+    </Media>
+    <Media Include="Assets\Music\DST-BeyondTheseForests.wav">
+      <Filter>kAssets</Filter>
+    </Media>
+    <Media Include="Assets\Sounds\EnemyDead1.wav">
+      <Filter>kAssets</Filter>
+    </Media>
+    <Media Include="Assets\Sounds\EnemyDead2.wav">
+      <Filter>kAssets</Filter>
+    </Media>
+    <Media Include="Assets\Sounds\EnemyDead3.wav">
+      <Filter>kAssets</Filter>
+    </Media>
+    <Media Include="Assets\Sounds\GenericPowerup.wav">
+      <Filter>kAssets</Filter>
+    </Media>
+    <Media Include="Assets\Music\maintheme.wav">
+      <Filter>kAssets</Filter>
+    </Media>
+    <Media Include="Assets\Sounds\Shoot.wav">
+      <Filter>kAssets</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shaders\Instancing.vs.hlsl">
+      <Filter>kGameCore</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GeometryShader.vs.hlsl">
+      <Filter>kGameCore</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GeometryShader.gs.hlsl">
+      <Filter>kGameCore</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\PixelShader.hlsl">
+      <Filter>kGameCore</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\Replication.vs.hlsl">
+      <Filter>kGameCore</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package.StoreAssociation.xml" />
+    <None Include="XAMLSpriteGame_StoreKey.pfx" />
+    <None Include="XAMLSpriteGame_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="kAssets">
+      <UniqueIdentifier>{bec7d607-0ab9-40aa-88e9-37e27d15ac79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kXML">
+      <UniqueIdentifier>{28cb285b-8cc9-4783-be28-e175b7bb2f2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kMiscHelpers">
+      <UniqueIdentifier>{98cf4558-31d0-44de-903b-c79df43b70d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kBasic">
+      <UniqueIdentifier>{d9a37af1-02f0-4ae6-bba2-b8d40029cc48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kGameObjects">
+      <UniqueIdentifier>{c4690103-8f64-4bf4-8020-b0392a1a5a2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kXAML">
+      <UniqueIdentifier>{c32502e5-3a68-4c51-9eb8-329d03d81168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kGameCore">
+      <UniqueIdentifier>{3952667e-080f-4f79-8fa1-3937d638143a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mAssets">
+      <UniqueIdentifier>{fecdc54b-5136-4e5c-a5ce-872b89d1f952}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Filter>kXAML</Filter>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Level Data\Andromeda.xml">
+      <Filter>kXML</Filter>
+    </Xml>
+    <Xml Include="Level Data\Andromeda2.xml">
+      <Filter>kXML</Filter>
+    </Xml>
+    <Xml Include="Level Data\Andromeda3.xml">
+      <Filter>kXML</Filter>
+    </Xml>
+    <Xml Include="Level Data\Galaxy1.xml">
+      <Filter>kXML</Filter>
+    </Xml>
+    <Xml Include="Level Data\Galaxy2.xml">
+      <Filter>kXML</Filter>
+    </Xml>
+    <Xml Include="Level Data\Galaxy3.xml">
+      <Filter>kXML</Filter>
+    </Xml>
+    <Xml Include="Level Data\Geometry.xml">
+      <Filter>kXML</Filter>
+    </Xml>
+    <Xml Include="Level Data\Geometry2.xml">
+      <Filter>kXML</Filter>
+    </Xml>
+    <Xml Include="Level Data\Geometry3.xml">
+      <Filter>kXML</Filter>
+    </Xml>
+    <Xml Include="Level Data\Levels.xml">
+      <Filter>kXML</Filter>
+    </Xml>
+    <Xml Include="Level Data\Menu.xml">
+      <Filter>kXML</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

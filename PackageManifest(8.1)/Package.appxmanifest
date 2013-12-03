@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="34879kristenaw.AttackoftheTitans" Publisher="CN=65561286-DE06-440A-AF48-48691A976688" Version="1.1.0.0" />
+  <Properties>
+    <DisplayName>Attack of the Titans</DisplayName>
+    <PublisherDisplayName>gameshark</PublisherDisplayName>
+    <Logo>Assets\Icons\50x50Tile.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.0</OSMinVersion>
+    <OSMaxVersionTested>6.2.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="GameEngine.App">
+      <m2:VisualElements DisplayName="Attack of the Titans" Description="Shingeki no Kyojin: You are an elite member of the scouting legion. Many titans have been reported incoming. Kill as many giants as you can to stop them from reaching home." BackgroundColor="#404040" ForegroundText="light" Square150x150Logo="Assets\Icons\150x150Tile.png" Square30x30Logo="Assets\Icons\30x30Tile.png">
+        <m2:DefaultTile ShortName="Galactic Wars" Wide310x150Logo="Assets\Icons\310x150Tile.png">
+        </m2:DefaultTile>
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="landscape" />
+        </m2:InitialRotationPreference>
+        <m2:SplashScreen BackgroundColor="#404040" Image="Assets\Icons\SplashScreen.png" />
+      </m2:VisualElements>
+      <Extensions>
+        <Extension Category="windows.protocol">
+          <Protocol Name="uclacs188">
+            <DisplayName>UCLA CS188</DisplayName>
+          </Protocol>
+        </Extension>
+        <Extension Category="windows.protocol">
+          <Protocol Name="cs188jiayuaw">
+            <DisplayName>CS188 Jia-Yu Aw</DisplayName>
+          </Protocol>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+</Package>

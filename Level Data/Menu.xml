@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Level>
+  <Theme track="maintheme.wav" ></Theme>
+  <Background   Texture="m32.png">  </Background>
+  <Foreground   Texture="planets.png" Texture2="planets2.png"  >  </Foreground>
+ 
+ 
+
+</Level>

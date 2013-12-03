@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="GameEngine.CS188" Publisher="CN=TYREX" Version="1.0.0.40" />
+  <Properties>
+    <DisplayName>GameEngine.CS188</DisplayName>
+    <PublisherDisplayName>k.sid</PublisherDisplayName>
+    <Logo>Assets\Icons\50x50Tile.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.0</OSMinVersion>
+    <OSMaxVersionTested>6.2.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="GameEngine.App">
+      <m2:VisualElements DisplayName="GameEngine" Description="CS188" BackgroundColor="#09bbe3" ForegroundText="light" Square150x150Logo="Assets\Icons\150x150Tile.png" Square30x30Logo="Assets\Icons\30x30Tile.png">
+        <m2:DefaultTile Wide310x150Logo="Assets\Icons\310x150Tile.png">
+        </m2:DefaultTile>
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="portrait" />
+          <m2:Rotation Preference="landscape" />
+          <m2:Rotation Preference="portraitFlipped" />
+          <m2:Rotation Preference="landscapeFlipped" />
+        </m2:InitialRotationPreference>
+        <m2:SplashScreen Image="Assets\Icons\SplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+</Package>
